@@ -27,6 +27,10 @@ A modern, responsive dashboard for tracking wellness, mood, and health goals. Bu
   Warna pastel dan gradasi disesuaikan dengan branding dan referensi desain user.
 - **Best Practice Next.js**  
   Menggunakan App Router, struktur folder modern, dan TypeScript untuk keamanan dan skalabilitas.
+- **Data Dummy Dinamis**  
+  Data dashboard diacak setiap login, siap diintegrasikan dengan backend/API.
+- **Login & Logout**  
+  Terdapat halaman login, fitur logout, dan proteksi akses dashboard.
 
 ---
 
@@ -40,9 +44,25 @@ A modern, responsive dashboard for tracking wellness, mood, and health goals. Bu
 
 ---
 
-## 📱 Preview
+## 📝 Cara Menjalankan Project
 
-![Wellness Tracker Preview](public/preview.png)
+1. **Clone repository**
+   ```bash
+   git clone https://github.com/theepar/wellness-tracker.git
+   cd wellness-tracker
+   ```
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
+3. **Jalankan development server**
+   ```bash
+   npm run dev
+   ```
+4. **Akses aplikasi di browser**
+   - Buka [http://localhost:3000](http://localhost:3000)
+   - Login dengan username dan password apa saja (dummy)
+   - Dashboard akan tampil dengan data random setiap login
 
 ---
 
@@ -53,4 +73,12 @@ A modern, responsive dashboard for tracking wellness, mood, and health goals. Bu
 - Kustomisasi tema dan warna di `globals.css` dan Tailwind config.
 
 ---
+
+## 👤 Kontributor
+
+- theepar (Owner)
+
+---
+
+Untuk pertanyaan, saran, atau pengembangan lebih lanjut, silakan hubungi pengembang melalui GitHub.
 

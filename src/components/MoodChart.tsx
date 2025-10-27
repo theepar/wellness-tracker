@@ -2,16 +2,11 @@
 import { ResponsiveContainer, AreaChart, Area, CartesianGrid, XAxis, YAxis, Tooltip } from "recharts";
 import { TrendingUp } from "lucide-react";
 
-const moodData = [
-    { month: "Jan", mood: 7 },
-    { month: "Feb", mood: 6 },
-    { month: "Mar", mood: 8 },
-    { month: "Apr", mood: 7 },
-    { month: "Mei", mood: 9 },
-    { month: "Jun", mood: 8 },
-];
+interface MoodChartProps {
+    moodData: { month: string; mood: number }[];
+}
 
-export default function MoodChart() {
+export default function MoodChart({ moodData }: MoodChartProps) {
     return (
         <div className="bg-white rounded-3xl p-6 md:p-8 shadow-sm hover:shadow-lg transition-shadow duration-300 border border-slate-100">
             <div className="flex flex-col md:flex-row items-center justify-between mb-6 gap-4">

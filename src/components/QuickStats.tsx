@@ -1,18 +1,23 @@
 "use client";
 import { Heart, TrendingUp, Target } from "lucide-react";
 
-const stats = [
-    { label: "Sesi Bulan Ini", value: "4", icon: Heart, color: "from-red-50 to-pink-50", iconColor: "text-red-500" },
-    { label: "Mood Rata-rata", value: "7.8", icon: TrendingUp, color: "from-purple-50 to-pink-50", iconColor: "text-purple-500" },
-    { label: "Konsistensi", value: "85%", icon: Target, color: "from-blue-50 to-cyan-50", iconColor: "text-blue-500" },
-];
+interface QuickStatsProps {
+    sessionCount: number;
+    moodAverage: number;
+}
+
 const cardGradients = [
     'linear-gradient(135deg, #fee2e2 0%, #fdf2f8 100%)', // pink
     'linear-gradient(135deg, #ede9fe 0%, #f1f5f9 100%)', // purple
     'linear-gradient(135deg, #e0f2fe 0%, #f1f5f9 100%)', // blue
 ];
 
-export default function QuickStats() {
+export default function QuickStats({ sessionCount, moodAverage }: QuickStatsProps) {
+    const stats = [
+        { label: "Sesi Bulan Ini", value: sessionCount.toString(), icon: Heart, iconColor: "text-red-500" },
+        { label: "Mood Rata-rata", value: moodAverage.toFixed(1), icon: TrendingUp, iconColor: "text-purple-500" },
+        { label: "Konsistensi", value: "85%", icon: Target, iconColor: "text-blue-500" },
+    ];
     return (
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
             {stats.map((stat, index) => {

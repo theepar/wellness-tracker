@@ -3,10 +3,10 @@ import { useState } from "react";
 import { Sparkles } from "lucide-react";
 
 const quotes = [
-    { text: "Kamu lebih kuat dari yang kamu kira.", author: "EmergencyyCall" },
-    { text: "Setiap hari adalah kesempatan baru untuk tumbuh.", author: "EmergencyyCall" },
-    { text: "Kesehatan mental sama pentingnya dengan kesehatan fisik.", author: "EmergencyyCall" },
-    { text: "Kamu tidak sendirian dalam perjalanan ini.", author: "EmergencyyCall" },
+    { text: "Kamu lebih kuat dari yang kamu kira." },
+    { text: "Setiap hari adalah kesempatan baru untuk tumbuh." },
+    { text: "Kesehatan mental sama pentingnya dengan kesehatan fisik." },
+    { text: "Kamu tidak sendirian dalam perjalanan ini." },
 ];
 
 export default function MotivationMessage() {
