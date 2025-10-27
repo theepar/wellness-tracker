@@ -17,7 +17,7 @@ A modern, responsive dashboard for tracking wellness, mood, and health goals. Bu
 
 ---
 
-## 🎨 Desain & Struktur Komponen
+## 🎨 Fitur & Struktur Komponen
 
 - **Komponen Modular**  
   Setiap fitur utama (statistik, motivasi, fitur mendatang, grafik mood, ringkasan sesi) dipisahkan ke file komponen sendiri di `src/components` untuk kemudahan pengembangan dan maintenance.
@@ -30,7 +30,13 @@ A modern, responsive dashboard for tracking wellness, mood, and health goals. Bu
 - **Data Dummy Dinamis**  
   Data dashboard diacak setiap login, siap diintegrasikan dengan backend/API.
 - **Login & Logout**  
-  Terdapat halaman login, fitur logout, dan proteksi akses dashboard.
+  Terdapat halaman login, fitur logout, dan proteksi akses dashboard. Username yang diinput akan tampil di header setelah login.
+- **Dropdown & Pointer Effect**  
+  Menu dropdown untuk logout, efek pointer pada logo, dan refresh dashboard dengan klik logo.
+- **Motivasi Harian dengan Animasi**  
+  Teks motivasi harian memiliki animasi blur & fade saat tombol motivasi baru diklik, serta menampilkan author.
+- **Toast Notifikasi**  
+  Notifikasi toast muncul saat data diupdate.
 
 ---
 
@@ -62,15 +68,18 @@ A modern, responsive dashboard for tracking wellness, mood, and health goals. Bu
 4. **Akses aplikasi di browser**
    - Buka [http://localhost:3000](http://localhost:3000)
    - Login dengan username dan password apa saja (dummy)
+   - Username yang diinput akan tampil di header setelah login
    - Dashboard akan tampil dengan data random setiap login
 
 ---
 
-## 📝 Pengembangan Lanjutan
+## 🛠️ Catatan Pengembangan
 
-- Tambahkan fitur baru dengan membuat komponen di `src/components`.
-- Integrasikan API dengan memanfaatkan props pada komponen utama.
-- Kustomisasi tema dan warna di `globals.css` dan Tailwind config.
+- Username disimpan di localStorage dengan key `username` saat login, dan diambil otomatis di header.
+- Untuk menambah motivasi baru, edit array di `MotivationMessage.tsx`.
+- Untuk menambah warna chart, edit variabel di `globals.css`.
+- Jika ingin integrasi API, cukup ganti data dummy di komponen utama dengan data dari backend.
+- Jika terjadi error saat build/dev, pastikan semua dependency sudah terinstall dan versi Node.js sesuai rekomendasi Next.js.
 
 ---
 
