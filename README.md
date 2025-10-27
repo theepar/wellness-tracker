@@ -37,7 +37,7 @@ A modern, responsive dashboard for tracking wellness, mood, and health goals. Bu
 ## 🔗 Rencana Integrasi Backend
 
 - **Tahap Selanjutnya:**
-  - Data sesi, mood, motivasi, dan fitur akan diambil dari backend (API REST/GraphQL).
+  - Data sesi, mood, motivasi, dan fitur akan diambil dari backend (API REST).
   - Autentikasi user dan sinkronisasi data kesehatan dengan perangkat (misal smartwatch) akan diintegrasikan.
   - Backend dapat menggunakan Node.js/Express, atau platform lain sesuai kebutuhan.
   - Komponen sudah disiapkan untuk menerima props/data dari API agar integrasi lebih mudah.
