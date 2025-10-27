@@ -40,12 +40,6 @@ A modern, responsive dashboard for tracking wellness, mood, and health goals. Bu
 
 ---
 
-## 📱 Preview
-
-![Wellness Tracker Preview](public/preview.png)
-
----
-
 ## 📝 Pengembangan Lanjutan
 
 - Tambahkan fitur baru dengan membuat komponen di `src/components`.
