@@ -1,36 +1,56 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🧘‍♂️ Wellness Tracker
 
-## Getting Started
+A modern, responsive dashboard for tracking wellness, mood, and health goals. Built with Next.js, Tailwind CSS, and Recharts.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🚀 Framework & Tools
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Next.js (App Router, TypeScript)**  
+  Powerful React framework for scalable web apps, supporting SSR/SSG and modular routing.
+- **Tailwind CSS**  
+  Utility-first CSS for rapid, consistent, and responsive UI development.
+- **Recharts**  
+  Flexible charting library for React, used for mood and health data visualization.
+- **Lucide React**  
+  Beautiful, open-source icon set for a clean and modern look.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🎨 Desain & Struktur Komponen
 
-## Learn More
+- **Komponen Modular**  
+  Setiap fitur utama (statistik, motivasi, fitur mendatang, grafik mood, ringkasan sesi) dipisahkan ke file komponen sendiri di `src/components` untuk kemudahan pengembangan dan maintenance.
+- **Responsif di Semua Device**  
+  Layout dan komponen dioptimalkan agar nyaman digunakan di mobile, tablet/iPad, dan desktop.
+- **Custom Colors & Gradients**  
+  Warna pastel dan gradasi disesuaikan dengan branding dan referensi desain user.
+- **Best Practice Next.js**  
+  Menggunakan App Router, struktur folder modern, dan TypeScript untuk keamanan dan skalabilitas.
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🔗 Rencana Integrasi Backend
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Tahap Selanjutnya:**
+  - Data sesi, mood, motivasi, dan fitur akan diambil dari backend (API REST/GraphQL).
+  - Autentikasi user dan sinkronisasi data kesehatan dengan perangkat (misal smartwatch) akan diintegrasikan.
+  - Backend dapat menggunakan Node.js/Express, atau platform lain sesuai kebutuhan.
+  - Komponen sudah disiapkan untuk menerima props/data dari API agar integrasi lebih mudah.
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📱 Preview
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+![Wellness Tracker Preview](public/preview.png)
+
+---
+
+## 📝 Pengembangan Lanjutan
+
+- Tambahkan fitur baru dengan membuat komponen di `src/components`.
+- Integrasikan API dengan memanfaatkan props pada komponen utama.
+- Kustomisasi tema dan warna di `globals.css` dan Tailwind config.
+
+---
+
