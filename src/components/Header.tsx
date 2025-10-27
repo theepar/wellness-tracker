@@ -30,17 +30,23 @@ export default function Header() {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
                 <div className="flex items-center justify-between">
                     <div className="flex items-center gap-3">
-                        <div className="w-10 h-10 rounded-xl bg-red-100 flex items-center justify-center shadow-lg">
-                            <span className="text-red-500 font-bold text-xl">E</span>
-                        </div>
-                        <div>
-                            <h1 className="text-2xl md:text-3xl font-bold text-red-500">
-                                EmergencyyCall
-                            </h1>
-                            <p className="text-xs md:text-sm text-muted-foreground">
-                                Wellness Tracker Dashboard
-                            </p>
-                        </div>
+                        <button
+                            className="flex items-center gap-3 group focus:outline-none"
+                            onClick={() => window.location.reload()}
+                            title="Refresh Dashboard"
+                        >
+                            <div className="w-10 h-10 rounded-xl bg-red-100 flex items-center justify-center shadow-lg">
+                                <span className="text-red-500 font-bold text-xl">E</span>
+                            </div>
+                            <div>
+                                <h1 className="text-2xl md:text-3xl font-bold text-red-500 text-left">
+                                    EmergencyyCall
+                                </h1>
+                                <p className="text-xs md:text-sm text-muted-foreground text-left">
+                                    Wellness Tracker Dashboard
+                                </p>
+                            </div>
+                        </button>
                     </div>
                     <div className="flex items-center gap-4">
                         {pathname !== "/login" ? (
