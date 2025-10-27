@@ -22,8 +22,8 @@ export default function Header() {
         };
     }, [dropdownRef]);
 
-    // Nama user dummy
-    const userName = "DG";
+    // Ambil username dari localStorage jika ada
+    const userName = typeof window !== "undefined" && localStorage.getItem("username") ? localStorage.getItem("username") : "DG";
 
     return (
         <header className="bg-white border-b border-border">

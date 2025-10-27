@@ -16,6 +16,7 @@ export default function LoginPage() {
         }
         setError("");
         localStorage.setItem("isLoggedIn", "true");
+        localStorage.setItem("username", username);
         router.push("/");
     }
 

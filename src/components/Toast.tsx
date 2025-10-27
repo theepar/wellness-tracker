@@ -17,7 +17,6 @@ export default function Toast({ message, show }: { message: string; show: boolea
         };
     }, [show]);
 
-    // Only update visible state outside of effect when show changes
     useEffect(() => {
         if (show) setVisible(true);
     }, [show]);
