@@ -37,6 +37,10 @@ A modern, responsive dashboard for tracking wellness, mood, and health goals. Bu
   Teks motivasi harian memiliki animasi blur & fade saat tombol motivasi baru diklik, serta menampilkan author.
 - **Toast Notifikasi**  
   Notifikasi toast muncul saat data diupdate.
+- **Filter Chart Mood**  
+  Grafik mood bisa difilter: Minggu Ini, Bulan Ini, dan 6 Bulan Terakhir. Data chart akan berubah sesuai filter yang dipilih.
+- **Popup CS Bot Ulasan**  
+  Tersedia tombol bot CS di kanan bawah dashboard. User bisa mengirim ulasan, kritik, atau saran, dan akan mendapat respon otomatis dari bot. Ulasan hanya disimpan di cache web (localStorage), tidak dikirim ke server.
 
 ---
 
@@ -79,7 +83,8 @@ A modern, responsive dashboard for tracking wellness, mood, and health goals. Bu
 - Untuk menambah motivasi baru, edit array di `MotivationMessage.tsx`.
 - Untuk menambah warna chart, edit variabel di `globals.css`.
 - Jika ingin integrasi API, cukup ganti data dummy di komponen utama dengan data dari backend.
-- Jika terjadi error saat build/dev, pastikan semua dependency sudah terinstall dan versi Node.js sesuai rekomendasi Next.js.
+- Fitur filter chart mood dan popup CS bot sudah tersedia di dashboard.
+- Konsistensi konseling: Jika jumlah sesi bulan ini hanya 1, nilai konsistensi pasti 100%. Jika lebih dari 1, nilai konsistensi akan diacak antara 70% hingga 99% setiap kali data di-refresh atau login ulang. Nilai ini hanya dummy dan bisa diubah sesuai kebutuhan backend.
 
 ---
 

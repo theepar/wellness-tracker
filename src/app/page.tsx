@@ -69,7 +69,7 @@ export default function Home() {
       // Randomize data
       setSessionCount(getRandomInt(1, 10));
       setLastSession(["Improving Sleep", "Healthy Eating", "Stress Relief", "Mindfulness", "Workout", "Yoga", "Therapy"][getRandomInt(0, 6)]);
-      setLastDate(`2023-0${getRandomInt(1, 9)}-${getRandomInt(10, 28)}`);
+      setLastDate(`2025-0${getRandomInt(1, 9)}-${getRandomInt(10, 28)}`);
       setMoodData(getRandomMoodData());
       setShowToast(true);
     }, 1000);

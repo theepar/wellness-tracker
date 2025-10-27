@@ -17,7 +17,7 @@ export default function QuickStats({ sessionCount, moodAverage, consistency }: Q
     const stats = [
         { label: "Sesi Bulan Ini", value: sessionCount.toString(), icon: Heart, iconColor: "text-red-500" },
         { label: "Mood Rata-rata", value: moodAverage.toFixed(1), icon: TrendingUp, iconColor: "text-purple-500" },
-        { label: "Konsistensi konselings", value: consistency, icon: Target, iconColor: "text-blue-500" },
+        { label: "Konsistensi konseling", value: consistency, icon: Target, iconColor: "text-blue-500" },
     ];
     return (
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
