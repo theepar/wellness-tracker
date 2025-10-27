@@ -21,8 +21,8 @@ export default function LoginPage() {
     }
 
     return (
-        <div className="min-h-screen flex items-center justify-center bg-zinc-50">
-            <form onSubmit={handleLogin} className="bg-white rounded-2xl shadow-lg p-8 w-full max-w-sm">
+        <div className="h-[73vh] md:h-[80vh] flex items-center justify-center bg-zinc-50">
+            <form onSubmit={handleLogin} className="bg-white rounded-2xl shadow-lg p-8 w-full max-w-sm mx-auto my-auto flex flex-col justify-center">
                 <h2 className="text-2xl font-bold mb-6 text-center text-slate-900">Login Wellness Tracker</h2>
                 <div className="mb-4">
                     <label className="block text-sm font-medium mb-1 text-slate-700">Username</label>

@@ -4,6 +4,7 @@ import { Heart, TrendingUp, Target } from "lucide-react";
 interface QuickStatsProps {
     sessionCount: number;
     moodAverage: number;
+    consistency: string;
 }
 
 const cardGradients = [
@@ -12,11 +13,11 @@ const cardGradients = [
     'linear-gradient(135deg, #e0f2fe 0%, #f1f5f9 100%)', // blue
 ];
 
-export default function QuickStats({ sessionCount, moodAverage }: QuickStatsProps) {
+export default function QuickStats({ sessionCount, moodAverage, consistency }: QuickStatsProps) {
     const stats = [
         { label: "Sesi Bulan Ini", value: sessionCount.toString(), icon: Heart, iconColor: "text-red-500" },
         { label: "Mood Rata-rata", value: moodAverage.toFixed(1), icon: TrendingUp, iconColor: "text-purple-500" },
-        { label: "Konsistensi", value: "85%", icon: Target, iconColor: "text-blue-500" },
+        { label: "Konsistensi konselings", value: consistency, icon: Target, iconColor: "text-blue-500" },
     ];
     return (
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
